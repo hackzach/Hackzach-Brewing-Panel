@@ -155,7 +155,7 @@ class Hackzach_Brewing_Panel_Brew {
 			$expected_fg,
 			$actual_fg,
 			$other) {
-		if( $this->parent->privileges->is_collaborator($serial) || current_user_can('edit_brews') ) {
+		if( $this->parent->privileges->is_collaborator($serial) ) {
 			global $wpdb;
 			$table_name = $wpdb->prefix . 'brewing_panel';
 
@@ -197,7 +197,7 @@ class Hackzach_Brewing_Panel_Brew {
 	 * @return boolean
 	 */
 	public function delete_data($serial) {
-		if( $this->parent->privileges->is_owner($serial) || current_user_can('delete_brews') ) {
+		if( $this->parent->privileges->is_owner($serial) ) {
 			global $wpdb;
 			$table_name = $wpdb->prefix . 'brewing_panel';
 				if( $wpdb->delete(
