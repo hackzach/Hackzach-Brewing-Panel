@@ -1,0 +1,29 @@
+# Copyright (C) 2014 Hackzach Brewing Panel
+# This file is distributed under the same license as the Hackzach Brewing Panel package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Hackzach Brewing Panel 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/hackzach-brewing-panel\n"
+"POT-Creation-Date: 2014-10-28 11:28:06+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: ZACH PADOVE <ZACHAARYP.COM@GMAIL.COM>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#. Plugin Name of the plugin/theme
+msgid "Hackzach Brewing Panel"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.hackzach.com/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Zach Padove"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.hackzach.com/"
+msgstr ""

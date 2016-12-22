@@ -1,0 +1,37 @@
+		CREATE TABLE IF NOT EXISTS `$this->table_name_brewing_measures` (
+			id MEDIUMINT(3) UNSIGNED NOT NULL AUTO_INCREMENT,
+			unit TINYTEXT,
+			type TINYTEXT,
+			name TINYTEXT,
+			g DOUBLE,
+			kg DOUBLE,
+			mg DOUBLE,
+			oz DOUBLE,
+			lb DOUBLE,
+			cup DOUBLE,
+			fl_oz DOUBLE,
+			gal DOUBLE,
+			l DOUBLE,
+			ml DOUBLE,
+			pt DOUBLE,
+			qt DOUBLE,
+			tbsp DOUBLE,
+			tsp DOUBLE,
+			UNIQUE KEY id (id)
+		) $charset_collate;
+
+		INSERT INTO `$this->table_name_brewing_measures` (`unit`, `type`, `name`, `g`, `kg`, `mg`, `oz`, `lb`, `cup`, `fl_oz`, `gal`, `l`, `ml`, `pt`, `qt`, `tbsp`, `tsp` ) VALUES 
+			('g', 'weight', 'Gram', 1, 0.001, 1000, 0.035274, 0.00220462, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+			('kg', 'weight', 'Kilogram', 1000, 1, 1000000, 35.274, 2.20462, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+			('mg', 'weight', 'Miligram', 0.001, 0.000001, 1, 0.000035274, 0.00000220462, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+			('oz', 'weight', 'Ounce', 28.3495, 0.0283495, 28349.5, 1, 0.0625, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+			('lb', 'weight', 'Pound', 453.59237, 0.45359237, 453592.37, 16, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+			('cup', 'volume', 'Cup', NULL, NULL, NULL, NULL, NULL, 1, 8.11537, 0.0634013, 0.24, 240, 0.50721, 0.253605, 16.2307, 48.6922),
+			('fl_oz', 'volume', 'Fluid Ounce', NULL, NULL, NULL, NULL, NULL, 0.123223, 1, 0.0078125, 0.0295735, 29.5735, 0.0625, 0.03125, 2, 6),
+			('gal', 'volume', 'Gallon', NULL, NULL, NULL, NULL, NULL, 15.7725, 128, 1, 3.78541, 3785.41, 8, 4, 256, 768),
+			('l', 'volume', 'Liter', NULL, NULL, NULL, NULL, NULL, 4.16667, 33.8140227018, 0.264172052358, 1, 1000, 2.11337641887, 1.05668820943, 67.628, 202.884),
+			('ml', 'volume', 'Mililiter', NULL, NULL, NULL, NULL, NULL, 0.00416667, 0.033814, 0.000264172052358, 0.001, 1, 0.00211338, 0.00105669, 0.067628, 0.202884),
+			('pt', 'volume', 'Pint', NULL, NULL, NULL, NULL, NULL, 1.97157, 16, 0.125, 0.473176, 473.176, 1, 0.5, 32, 96),
+			('qt', 'volume', 'Quart', NULL, NULL, NULL, NULL, NULL, 3.94314, 32, 0.25, 0.946353, 946.353, 2, 1, 64, 192),
+			('tbsp', 'volume', 'Tablespoon', NULL, NULL, NULL, NULL, NULL, 0.0616115, 0.5, 0.00390625, 0.0147868, 14.7868, 0.03125, 0.015625, 1, 3),
+			('tsp', 'volume', 'Teaspoon', NULL, NULL, NULL, NULL, NULL, 0.0205372, 0.166667, 0.00130208, 0.00492892, 4.92892, 0.0104167, 0.00520833, 0.333333, 1);

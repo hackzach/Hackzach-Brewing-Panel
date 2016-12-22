@@ -1,0 +1,128 @@
+/* WP_List_Table Brews and Ingredients */
+.wp-list-table.brews .column-serial {
+    width: 7%;
+}
+.wp-list-table.brews .column-bottle {
+    width: 8%;
+}
+.wp-list-table.brews .column-name {
+    width: 18%;
+}
+.wp-list-table.brews .column-date {
+    width: 15%;
+}
+.wp-list-table.brews .column-stage {
+    width: 7%;
+}
+.wp-list-table.brews .column-type {
+    width: 7%;
+}
+.wp-list-table.brews .column-actual_fg {
+    width: 9%;
+}
+
+.wp-list-table.ingredients .fermentables.column-id {
+    width: 4%;
+}
+.wp-list-table.ingredients .fermentables.column-name {
+    width: 30%;
+}
+.wp-list-table.ingredients .fermentables.column-type {
+    width: 15%;
+}
+.wp-list-table.ingredients .fermentables.column-country {
+    width: 15%;
+}
+.wp-list-table.ingredients .fermentables.column-category {
+    width: 15%;
+}
+.wp-list-table.ingredients .fermentables.column-color {
+    width: 10%;
+}
+.wp-list-table.ingredients .fermentables.column-ppg {
+    width: 10%;
+}
+
+.wp-list-table.ingredients .hops.column-id {
+    width: 4%;
+}
+.wp-list-table.ingredients .hops.column-name {
+    width: 15%;
+}
+.wp-list-table.ingredients .hops.column-type {
+    width: 9%;
+}
+.wp-list-table.ingredients .hops.column-alpha_acid {
+    width: 9%;
+}
+.wp-list-table.ingredients .hops.column-beta_acid {
+    width: 9%;
+}
+.wp-list-table.ingredients .hops.column-cohumulone {
+    width: 10%;
+}
+.wp-list-table.ingredients .hops.column-myrcene_oil {
+    width: 9%;
+}
+.wp-list-table.ingredients .hops.column-humulene_oil {
+    width: 10%;
+}
+.wp-list-table.ingredients .hops.column-caryophyllene_oil {
+    width: 12%;
+}
+.wp-list-table.ingredients .hops.column-farnesene_oil {
+    width: 10%;
+}
+
+.list-actions {
+    background:#ECECEC;
+    border:1px solid #CCC;
+    padding:0 10px;
+    margin-top:5px;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+/* Brew Form Stage Notes */
+.brew-column {
+    width: 50%;
+    float: left;
+}
+.brew-calculator {
+    width: 33%;
+    float: left;
+}
+.brew-stages {
+    width: 90%;
+}
+
+.note_editable {
+    border-style: groove;
+
+    display:none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 10px;
+}
+
+.note_view {
+    border-style: groove;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 10px;
+}
+/* Permissions */
+.taggable {
+    width: 33%;
+    height: 160px;
+}
+/* Dialogs */
+.modal-ui {
+    display:none;
+}
+/* AJAX Stuff */
+.ajax-response {
+    float:left;
+}
